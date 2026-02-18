@@ -20,7 +20,7 @@ A simple Python program to visualize AI pathfinding (un-informed & blind search)
 ## Requirements
 Install these Python libraries before running:
 
-```bash
+
 pip install numpy matplotlib
 How to Run
 Via Terminal / Command Line
@@ -30,7 +30,7 @@ Run the programBashpython main.py
 Choose an algorithm by entering a number (1–6)
 
 Via Jupyter Notebook
-
+*
 Install libraries (run once)Python!pip install numpy matplotlib
 Copy all your code into one cell
 Remove if __name__ == "__main__": line
@@ -39,4 +39,5 @@ Add main() at the end of the cell
 Run the cell (Shift + Enter)
 Enter a number 1–6 to select the algorithm
 A window will pop up showing the step-by-step search
-Close the window when finished, or re-run the cell for another algorithm
+Close the window when finished, or re-run the cell for another algorithm*
+
