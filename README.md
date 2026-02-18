@@ -1,63 +1,42 @@
-AI Grid Pathfinding Visualizer
+# AI Grid Pathfinding Visualizer
 
-A simple Python program to visualize AI pathfinding algorithms on an 8x8 grid with obstacles.
+A simple Python program to visualize AI pathfinding (un-informed & blind search) algorithms on an **8x8 grid** with obstacles.
 
-Features
+## Features
+- Shows **explored nodes**
+- Shows **frontier nodes**
+- Shows the **final shortest path** (where applicable)
+- Step-by-step visualization of the search process
+- Clean grid animation using Matplotlib
 
-Shows explored nodes
+## Algorithms Implemented
+- Breadth First Search (**BFS**)
+- Depth First Search (**DFS**)
+- Uniform Cost Search (**UCS**)
+- Depth Limited Search (**DLS**)
+- Iterative Deepening DFS (**IDDFS**)
+- Bidirectional Search
 
-Shows frontier nodes
+## Requirements
+Install these Python libraries before running:
 
-Shows the final shortest path
-
-Step-by-step visualization of the search process
-
-Algorithms Implemented
-
-Breadth First Search (BFS)
-
-Depth First Search (DFS)
-
-Uniform Cost Search (UCS)
-
-Depth Limited Search (DLS)
-
-Iterative Deepening DFS (IDDFS)
-
-Bidirectional Search
-
-Requirements
-
-Before running, install these Python libraries:
-
+```bash
 pip install numpy matplotlib
+How to Run
+Via Terminal / Command Line
 
-Run via Terminal
+Install dependenciesBashpip install numpy matplotlib
+Run the programBashpython main.py
+Choose an algorithm by entering a number (1–6)
 
-Install dependencies:
+Via Jupyter Notebook
 
-pip install numpy matplotlib 
-
-Run the program:
-
-python main.py
-
-Choose an algorithm from the menu.
-
-Open Jupyter Notebook and run !pip install numpy matplotlib once.
-
-Copy all your code into one cell, remove if __name__ == "__main__": main(), and add main() at the end.
-
-Run the cell with Shift + Enter.
-
-Enter a number 1–6 to choose the algorithm.
-
-A window will pop up showing the grid and path.
-
-Close the window when done or rerun the cell to try another algorithm.
-
-If the window doesn’t show, add %matplotlib notebook at the top.
-
-
-Understand shortest path vs explored nodes
-
+Install libraries (run once)Python!pip install numpy matplotlib
+Copy all your code into one cell
+Remove if __name__ == "__main__": line
+Add main() at the end of the cell
+(Optional) Add this at the very top if plots don't show:Python%matplotlib notebook
+Run the cell (Shift + Enter)
+Enter a number 1–6 to select the algorithm
+A window will pop up showing the step-by-step search
+Close the window when finished, or re-run the cell for another algorithm
