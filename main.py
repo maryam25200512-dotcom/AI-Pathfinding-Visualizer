@@ -7,9 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('TkAgg')
 
-# ==========================================================
-# GRID ENVIRONMENT
-# ==========================================================
+#******************************
+#     GRID ENVIRONMENT        #
+#******************************
+
 
 class GridEnvironment:
     def __init__(self, rows=8, cols=8, obstacle_prob=0.15):
@@ -55,9 +56,9 @@ class GridEnvironment:
                 neighbors.append(new_pos)
         return neighbors
 
-# ==========================================================
-# VISUALIZER
-# ==========================================================
+#******************************
+#       VISUALIZER            #
+#******************************
 
 class PathfindingVisualizer:
     def __init__(self, env, algorithm_name):
@@ -159,9 +160,9 @@ class PathfindingVisualizer:
         plt.ioff()
         plt.show()
 
-# ==========================================================
-# SEARCH ALGORITHMS
-# ==========================================================
+#******************************
+#     SEARCH Algorihtms       #
+#******************************
 
 class SearchAlgorithms:
     def __init__(self, env, viz):
@@ -176,9 +177,9 @@ class SearchAlgorithms:
         path.append(self.env.start)
         return path[::-1]
 
-    # ------------------------------------------------------
-    # BFS
-    # ------------------------------------------------------
+#******************************
+#         BFS                 #
+#******************************
     def bfs(self):
         queue = deque([self.env.start])
         parent = {}
@@ -201,10 +202,10 @@ class SearchAlgorithms:
                     queue.append(neighbor)
 
         return None
-
-    # ------------------------------------------------------
-    # DFS
-    # ------------------------------------------------------
+        
+#******************************
+#    DFS                      #
+#******************************
     def dfs(self):
         stack = [self.env.start]
         parent = {}
@@ -231,9 +232,9 @@ class SearchAlgorithms:
 
         return None
 
-    # ------------------------------------------------------
-    # UCS
-    # ------------------------------------------------------
+#******************************
+#     UCS                      #
+#******************************
     def ucs(self):
         pq = [(0, self.env.start)]
         parent = {}
@@ -266,9 +267,9 @@ class SearchAlgorithms:
 
         return None
 
-    # ------------------------------------------------------
-    # DLS
-    # ------------------------------------------------------
+#******************************
+#     DLS                      #
+#******************************
     def dls(self, limit=15):
         def recursive(node, depth):
             explored.add(node)
@@ -299,9 +300,9 @@ class SearchAlgorithms:
 
         return None
 
-    # ------------------------------------------------------
-    # IDDFS
-    # ------------------------------------------------------
+#******************************
+#     IDDFS                    #
+#******************************
     def iddfs(self):
         for depth in range(30):
             self.viz.reset_steps()
@@ -310,9 +311,9 @@ class SearchAlgorithms:
                 return result
         return None
 
-    # ------------------------------------------------------
-    # BIDIRECTIONAL
-    # ------------------------------------------------------
+#******************************
+#     BIDIRECTIONAL            #
+#******************************
     def bidirectional_search(self):
         qf = deque([self.env.start])
         qb = deque([self.env.goal])
@@ -354,9 +355,9 @@ class SearchAlgorithms:
 
         return None
 
-# ==========================================================
-# MAIN
-# ==========================================================
+#******************************
+#    MAIN                      #
+#******************************
 
 def main():
     print("\nSelect Algorithm:")
@@ -399,3 +400,4 @@ def main():
 
 if __name__ == "__main__":
     main()    
+
