@@ -36,13 +36,14 @@ Choose an algorithm by entering a number (1–6)
 
 ## **Via Jupyter Notebook**
 
--Install libraries (run once in a cell)Python!pip install numpy matplotlib
--Copy all your code into one cell
--Remove the line: if __name__ == "__main__":
--Add main() at the end of the cell
--(Optional) If plots don’t appear, add this at the very top:Python%matplotlib notebook
--Run the cell (Shift + Enter)
--Enter a number 1–6 to select the algorithm
--A window will pop up showing the step-by-step search
--Close the window when finished, or re-run the cell to try another algorithm
+1. Install libraries (run once in a cell)Python!pip install numpy matplotli
+2. Copy all your code into one cell
+-Remove the line: if __name__ == "____main__"
+3. Add main() at the end of the cell
+(Optional) If plots don’t appear, add this at the very top:Python%matplotlib nonotebook
+4. Run the cell (Shift + Enter)
+5. Enter a number 1–6 to select the algorithm
+6. A window will pop up showing the step-by-step search
+7. Close the window when finished, or re-run the cell to try another algorithm
+
 
