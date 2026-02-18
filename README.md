@@ -32,26 +32,32 @@ Before running, install these Python libraries:
 
 pip install numpy matplotlib
 
-How to Run
+Run via Terminal
 
-Clone the repository:
+Install dependencies:
 
-git clone https://github.com/your-username/your-repo-name.git
-
-
-Go to the project folder:
-
-cd your-repo-name
-
+pip install numpy matplotlib 
 
 Run the program:
 
 python main.py
 
-Purpose
+Choose an algorithm from the menu.
 
-Learn how different search algorithms work
+Open Jupyter Notebook and run !pip install numpy matplotlib once.
 
-Compare how they explore a grid
+Copy all your code into one cell, remove if __name__ == "__main__": main(), and add main() at the end.
+
+Run the cell with Shift + Enter.
+
+Enter a number 1–6 to choose the algorithm.
+
+A window will pop up showing the grid and path.
+
+Close the window when done or rerun the cell to try another algorithm.
+
+If the window doesn’t show, add %matplotlib notebook at the top.
+
 
 Understand shortest path vs explored nodes
+
